@@ -14,6 +14,9 @@ export const registerValidation = [
 export const postCreateValidation = [
     body('title', "Введите заголовок статьи").isLength({min : 1}).isString(),
     body('text', "Введите текст статьи").isLength({min : 1}).isString(),
-    body('tags', "huiНеверный формат тегов(укажите массив)").optional().isString(),
+    body('tags', "Неверный формат тегов").optional().isString(),
     body('imageUrl', "huiНеверня ссылка на изображение").optional().isString()
+]
+export const commentCreateValidation = [
+    body('text', "Введите текст комментария").isLength({min : 1}).isString()
 ]

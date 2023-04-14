@@ -8,14 +8,40 @@ export const getLastTags = async (request, response) => {
 
         response.json(tags)
     } catch (error) {
+        response.status(500).json({
+            message: "Не удалось получить тэги"
+        })
+    }
+}
 
+export const getAllByTag = async (request, response) => {
+    try {
+        const tag = request.params.tag
+        const posts = await PostModel.find({ tags: tag}).populate("user").exec()
+        response.json(posts)
+    } catch (error) {
+        response.status(500).json({
+            message: "Не удалось получить статьи"
+        })
     }
 }
 
 export const getAll = async (request, response) => {
     try {
         const posts = await PostModel.find().populate("user").exec()
+        posts.reverse()
+        response.json(posts)
+    } catch (error) {
+        response.status(500).json({
+            message: "Не удалось получить статьи"
+        })
+    }
+}
 
+export const getAllSorted = async (request, response) => {
+    try {
+        const posts = await PostModel.find().populate("user").exec()
+        posts.sort((a, b) => b.viewsCount - a.viewsCount)
         response.json(posts)
     } catch (error) {
         response.status(500).json({
@@ -111,11 +137,13 @@ export const update = async (request, response) => {
 
 export const create = async (request, response) => {
     try {
+        const tagsArray = request.body.tags.split(", ")
+
         const document = new PostModel({
             title: request.body.title,
             text: request.body.text,
             imageUrl: request.body.imageUrl,
-            tags: request.body.tags.split(","),
+            tags: tagsArray,
             user: request.userId
         })
 
