@@ -52,6 +52,7 @@ app.post("/posts", checkAuth, postCreateValidation, handleValidationErrors, Post
 app.get("/posts", PostController.getAll)
 app.get("/posts/tags/:tag", PostController.getAllByTag)
 app.get("/posts/popular", PostController.getAllSorted)
+app.get("/posts/popular/tags/:tag", PostController.getAllSortedByTag)
 app.get("/posts/:id", PostController.getOne)
 app.delete("/posts/:id", checkAuth, PostController.remove)
 app.patch("/posts/:id", checkAuth, postCreateValidation, handleValidationErrors, PostController.update)

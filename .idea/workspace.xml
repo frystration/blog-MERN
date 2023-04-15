@@ -2,34 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53a1e397-1a19-4aad-a064-4bcacc588169" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/slices/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/slices/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/react-blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/utils/getUnique.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AddComment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddComment/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CommentsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CommentsBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Post/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/AddPost/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/AddPost/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TagsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TagsBlock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/FullPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/FullPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Registration/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/slices/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/slices/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/CommentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/CommentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/PostController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/PostController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,16 +41,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/dev/react/projects/залитть на гит/03-MERN-blog/BLOG-MERN",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/react/projects/03-MERN-blog/BLOG-MERN&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="npm.start:dev">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +88,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679175252339</updated>
-      <workItem from="1679175277600" duration="1933000" />
+      <workItem from="1679175277600" duration="3628000" />
+      <workItem from="1679179193559" duration="17000" />
+      <workItem from="1681075677631" duration="21000" />
+      <workItem from="1681150904989" duration="706000" />
+      <workItem from="1681237994578" duration="22000" />
+      <workItem from="1681327053491" duration="5000" />
+      <workItem from="1681401064166" duration="6559000" />
+      <workItem from="1681478513784" duration="18690000" />
     </task>
     <servers />
   </component>

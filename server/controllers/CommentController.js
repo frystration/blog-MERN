@@ -25,7 +25,7 @@ export const getCommentsByPostId = async (request, response) => {
         const postId = request.params.id
         const comments = await CommentModel.find({
             post: postId
-        }).exec()
+        }).populate("user").exec()
         response.json(comments)
     } catch (error) {
         response.status(500).json({
@@ -36,7 +36,7 @@ export const getCommentsByPostId = async (request, response) => {
 
 export const getLastComments = async (request, response) => {
     try {
-        const comments = (await CommentModel.find().exec()).reverse().slice(0, 2)
+        const comments = (await CommentModel.find().populate("user").exec()).reverse().slice(0, 2)
         response.json(comments)
     } catch (error) {
         response.status(500).json({

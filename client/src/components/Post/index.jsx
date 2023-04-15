@@ -71,7 +71,8 @@ export const Post = ({
           <ul className={styles.tags}>
             {tags.map((name) => (
               <li key={name}>
-                <Link to={`/tag/${name}`}>#{name}</Link>
+                {/*<Link to={`/tag/${name}`}>#{name}</Link>*/}
+                <div style={{cursor: "default"}} >#{name}</div>
               </li>
             ))}
           </ul>
@@ -82,8 +83,8 @@ export const Post = ({
               <span>{viewsCount}</span>
             </li>
             <li>
-              <CommentIcon />
-              <span>{commentsCount}</span>
+              {/*<CommentIcon />*/}
+              {/*<span>{commentsCount}</span>*/}
             </li>
           </ul>
         </div>

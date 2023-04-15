@@ -8,8 +8,10 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import Skeleton from "@mui/material/Skeleton";
+import {useSelector} from "react-redux";
 
 export const CommentsBlock = ({ items, children, isLoading = true }) => {
+
   return (
     <SideBlock title="Комментарии">
       <List>
@@ -29,7 +31,7 @@ export const CommentsBlock = ({ items, children, isLoading = true }) => {
                   <Skeleton variant="text" height={18} width={230} />
                 </div>
               ) : (
-                <ListItemText
+                <ListItemText style={{overflow: "hidden"}}
                   primary={obj.user.fullName}
                   secondary={obj.text}
                 />

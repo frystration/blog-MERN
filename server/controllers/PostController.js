@@ -1,11 +1,12 @@
 import PostModel from "../models/Post.js";
+import {getUnique} from "../utils/getUnique.js";
 
 
 export const getLastTags = async (request, response) => {
     try {
-        const posts = await PostModel.find().limit(5).exec()
-        const tags = posts.map(object => object.tags).flat().slice(0, 5)
-
+        const posts = await PostModel.find().exec()
+        posts.reverse().slice(0, 5)
+        const tags = getUnique((posts.map(object => object.tags))).flat().slice(0, 5)
         response.json(tags)
     } catch (error) {
         response.status(500).json({
@@ -17,7 +18,19 @@ export const getLastTags = async (request, response) => {
 export const getAllByTag = async (request, response) => {
     try {
         const tag = request.params.tag
-        const posts = await PostModel.find({ tags: tag}).populate("user").exec()
+        const posts = (await PostModel.find({tags: tag}).populate("user").exec()).reverse()
+        response.json(posts)
+    } catch (error) {
+        response.status(500).json({
+            message: "Не удалось получить статьи"
+        })
+    }
+}
+export const getAllSortedByTag = async (request, response) => {
+    try {
+        const tag = request.params.tag
+        const posts = await PostModel.find({tags: tag}).populate("user").exec()
+        posts.sort((a, b) => b.viewsCount - a.viewsCount)
         response.json(posts)
     } catch (error) {
         response.status(500).json({
