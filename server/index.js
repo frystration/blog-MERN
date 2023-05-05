@@ -16,7 +16,7 @@ import multer from "multer"
 import {checkAuth, handleValidationErrors} from "./utils/index.js"
 
 
-mongoose.connect("mongodb+srv://admin:RGiKYOJT6kLii6qC@cluster0.qiahgam.mongodb.net/blog?retryWrites=true&w=majority",)
+mongoose.connect("mongodb+srv://admin:admin@cluster0.qiahgam.mongodb.net/blog?retryWrites=true&w=majority",)
     .then(() => console.log("DB Ok"))
     .catch((error) => console.log("DB Error", error))
 
